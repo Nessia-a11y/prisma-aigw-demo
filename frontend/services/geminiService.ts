@@ -22,7 +22,7 @@ export const sendFeedback = async (traceId: string, value: number) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'x-portkey-api-key': 'm2vk54XCNRpHGn5jpA2kG9QpQOao'
+                'x-portkey-api-key': 'INPUT_YOUR_KEY'
             },
             body: JSON.stringify({
                 trace_id: traceId,
@@ -70,8 +70,8 @@ export const sendMessageStream = async function* (message: string, role: 'custom
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'x-portkey-api-key': 'm2vk54XCNRpHGn5jpA2kG9QpQOao',
-                'x-portkey-config': 'pc-best-p-c8093a',
+                'x-portkey-api-key': 'INPUT_YOUR_KEY',
+                'x-portkey-config': 'INPUT_YOUR_CONFIG_ID',
                 'x-portkey-cache': 'simple',
                 'x-portkey-metadata': JSON.stringify({ task: taskValue, role: role })
             },
